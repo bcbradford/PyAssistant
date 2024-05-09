@@ -69,7 +69,7 @@ in the prototyping phase; selecting a model from the main window only downloads 
 curl -sSL https://install.python-poetry.org | python3 -
 
 # Clone the repository
-git clone https://
+git clone https://github.com/bcbradford/PyAssistant.git
 cd PyAssistant
 
 # Install dependencies
