@@ -1,11 +1,12 @@
 # PyAssistant
 
 **Version:** 0.1
+
 **Author:** Brent Bradford
 
 ## Note
 	
-This application uses pretrained hugging face models which are downloaded and stored locally
+This application uses pretrained hugging face models that are downloaded and stored locally
 on your machine. Please ensure you have sufficient disk space and VRAM to download and initialize
 these models. Refer to the model's documentation for more detailed information on model requirements
 and licenses.
@@ -92,26 +93,25 @@ poetry run pyassistant
   the model has been downloaded you will be greeted by the model.
 
 #### NLP Model
-  1. After you have been greeted by the model you can use the entry widget
-  at the bottom of the window to chat with the model.
+  1. After you've been greeted, you can use the entry widget at the bottom 
+  of the window to chat with the model.
 
   2. You can select a different model from the "Models" menu at
   any time.
 
 #### Diffuser Model
-  1. After you have been greeted by the model you will be prompted to
-  enter a description of the image you would like the model to generate.
+  1. You will then be prompted to enter a description of the image you would like to generate.
 
-  2. Input your image desceription in the entry widget located at the bottom
-  of the window and press enter to submit your description to the model.
+  2. Type your image description in the entry widget located at the bottom
+  of the window and press enter.
 
-  3. The model will then generate an image (this can take a few minutes
+  3. The model will then generate the image (this can take a few minutes
   depending on the model type and your system's hardware). 
 
   4. When the model has finished you will be shown a dialog window asking
   if you would like to save the image.
 
-  5. if you pressed yes, you will be shown a new dialog that will allow you
+  5. if you clicked on yes, you will be shown a new dialog that will allow you
   to save your image.
 
   6. After you have finished saving or cancelling your image, you can input
