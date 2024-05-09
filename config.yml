@@ -1,0 +1,49 @@
+DEBUG: False
+OUTPUT_PATH: "output"
+AUTH_TOKEN: ""
+
+LOGGER:
+  NAME: "ModelLogger"
+  LOG_PATH: "log"
+  INFO_LOG: "info.log"
+  ERROR_LOG: "error.log"
+  FORMAT: "[%(asctime)s] %(levelname)s - %(message)s"
+
+MODELS:
+  NLP_MODEL:
+    MODEL: "gpt2-medium"
+    TYPE: "nlp"
+
+    TOKENIZER_PARAMS:
+      add_special_tokens: True
+      truncation: True
+      max_length: 512
+      padding: "max_length"
+      return_tensors: "pt"
+
+    OUTPUT_PARAMS:
+      max_new_tokens: 100
+      num_return_sequences: 1
+      no_repeat_ngram_size: 3
+      early_stopping: True
+      temperature: 0.6
+      top_k: 30
+      top_p: 0.85
+      do_sample: True
+
+  PIXART_MODEL:
+    MODEL: "PixArt-alpha/PixArt-XL-2-1024-MS"
+    TYPE: "diffuser"
+
+    TRANSFORMER_PARAMS:
+      mode: "reduce-overhead"
+      fullgraph: True
+
+  PIXART_MODEL_LOW_VRAM:
+    MODEL: "PixArt-alpha/PixArt-XL-2-1024-MS"
+    TYPE: "diffuser"
+
+    ENCODER_PARAMS:
+      subfolder: "text_encoder"
+      load_in_4bit: True
+
