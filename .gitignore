@@ -1,5 +1,4 @@
 .env
-cache/*
 __pycache__
 **/__pycache__
 log/*.log
