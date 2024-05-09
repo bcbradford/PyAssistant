@@ -21,7 +21,7 @@ and licenses.
 - [PixArt-alpha/PixArt-XL-2-1024-MS](https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS)
 
 The GUI and event logic are still under development. The only tested model so far is the PixArt 
-model optimized for low VRAM requirements. 
+model optimized for low VRAM environments. 
 
 ## Description
 
@@ -64,7 +64,7 @@ in the prototyping phase; selecting a model from the main window only downloads 
 
 ## Installation
 
-'''bash
+```bash
 # Install Poetry
 curl -sSL https://install.python-poetry.org | python3 -
 
@@ -74,16 +74,20 @@ cd PyAssistant
 
 # Install dependencies
 poetry install
+```
 
 ## Usage
 
+```bash
 poetry run pyassistant
+```
 
 ### GUI Instructions
 
   1. Select a model type and model from the "Models" menu.
 
-  **Under Development**
+#### Under Development
+
   2. The application will then download and initialize the model. After
   the model has been downloaded you will be greeted by the model.
 
@@ -118,7 +122,7 @@ poetry run pyassistant
 
 ## License
 
-**PyAssistant**
+### PyAssistant
 Copyright (c) 2024 Brent Bradford
 
 This product is licensed under the Apache License 2.0 (see LICENSE file for details).
